@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    p{
+    color:white;
+    }
+l
+h1{
+color:white;
+}
+
+</style>
+</head>
+<body background="https://wallpaperaccess.com/full/343619.jpg">
+<center>
+<h1>DEPOSIT PAGE</h1>
+<form action="add" method="post" >
+    {% csrf_token %}
+    <input type="number" name="Account_no" placeholder="ACCOUNT_NO"><br><br>
+    <input type="number" name="Deposit" placeholder="AMOUNT"><br><br>
+    <input type="submit" value="Deposit">
+
+   <p>{{ message }}</p>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        a:link, a:visited {
+  background-color: #5a84d8;
+  color: white;
+  padding: 6px 46px  ;
+  text-align: 2px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+
+color: white; text-decoration: none; background-color: #4a77d4; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear;
+
+}
+h1{
+color:white;
+}
+    </style>
+
+</head>
+<body background="https://wallpaperaccess.com/full/343619.jpg">
+<center>
+<h1>REGISTER</h1><br><br>
+<form action="register" method="post">
+    {% csrf_token %}
+    <input type="number" name="Account_no" placeholder="ENTER ACCOUNT NUMBER"><br><br>
+    <input type="text" name="Name" placeholder="ENTER NAME"><br><br>
+    <input type="number" name="Phone_no" placeholder="ENTER PHONE NUMBER"><br><br>
+    <input type="number" name="Balance" placeholder="ENTER BALANCE"><br><br>
+    <input type="text" name="Username" placeholder="USERNAME"><br><br>
+    <input type="password" name="Password" placeholder="PASSWORD"><br><br>
+    <input type="submit" value="REGISTER"><br><br>
+    <a href="regtolog"> LOGIN</a>
+</form>
+    </center>
+</body>
+
+</html>

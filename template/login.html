@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+h1{
+color:white;
+}
+
+    </style>
+</head>
+<body background="https://wallpaperaccess.com/full/343619.jpg">
+<center>
+<h1>LOGIN PAGE</h1>
+<form action="login" method="post" >
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="USERNAME"><br><br>
+    <input type="password" name="password" placeholder="PASSWORD"><br><br>
+    <input type="submit" value="Login">
+
+</form>
+    </center>
+</body>
+</html>

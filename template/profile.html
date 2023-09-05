@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        a:link, a:visited {
+  background-color: #5a84d8;
+  color: white;
+  padding: 6px 46px  ;
+  text-align: 2px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+
+color: white; text-decoration: none; background-color: #4a77d4; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear;
+
+}
+
+h1{
+color:white;
+}
+
+
+    </style>
+</head>
+<body background="https://wallpaperaccess.com/full/343619.jpg">
+<center>
+    <h1>PROFILE PAGE</h1>
+<table border="=1px solid"  style="color:white; width:80%; border-radius:8px; border-color:#4a77d4;lll">
+<thead>
+    <th>ACCOUNT NO.</th>
+    <th>NAME</th>
+    <th>PHONE NUMBER</th>
+    <th>BALANCE</th>
+    <th>USERNAME</th>
+
+</thead>
+<tbody>
+<tr>
+    {% for i in data %}
+    <td>{{i.account_no}}</td>
+    <td>{{i.name}}</td>
+    <td>{{i.phone_no}}</td>
+    <td>{{i.balance}}</td>
+    <td>{{i.username}}</td>
+    {% endfor %}
+</tr>
+</tbody>
+
+</table><br>
+
+<a href="acctowit">WITHDRAW</a>
+<a href="acctodep">DEPOSIT</a><br><br>
+<a href="logout">LOGOUT</a>
+</center>
+
+</body>
+</html>

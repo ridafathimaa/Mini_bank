@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    p{
+    color:white;
+    }
+h1{
+color:white;
+}
+
+</style>
+</head>
+
+
+<body background="https://wallpaperaccess.com/full/343619.jpg">
+<center>
+<h1>WITHDRAW PAGE</h1>
+<form action="take" method="POST" >
+    {% csrf_token %}
+   <input type="number" name="Account_no" placeholder="ACCOUNT_NO "><br><br>
+    <input type="number" name="Withdraw" placeholder="AMOUNT"><br><br>
+    <input type="submit" value="Withdraw">
+
+       <p> {{ message }} </p>
+
+</form>
+    </center>
+</body>
+</html>
